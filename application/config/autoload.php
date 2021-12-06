@@ -133,6 +133,5 @@ $autoload['language'] = array();
 |	$autoload['model'] = array('first_model' => 'first');
 */
 $autoload['model'] = array(
-    'Model_user', 'Full_user', 'Model_kategori_surat',
-    'Model_surat_undangan', 'Model_tambah_surat'
+    'Model_user', 'full_user'
 );
