@@ -1,29 +1,29 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class View_user extends CI_Controller
+class Data_variable extends CI_Controller
 {
     public function index()
     {
-        $data['users'] = $this->full_user->Bacauser();
+        $data['variables'] = $this->Model_variable->readvariables();
         $this->load->view('template/header');
         $this->load->view('template/Navbar');
         $this->load->view('template/sidebar');
-        $this->load->view('view_user/show_user', $data);
+        $this->load->view('variabel/index_variable', $data);
         $this->load->view('template/footer');
     }
 
-    public function tambah()
+    public function view_add()
     {
-
         $this->load->view('template/header');
         $this->load->view('template/Navbar');
         $this->load->view('template/sidebar');
-        $this->load->view('view_user/tambah_user');
+        $this->load->view('variabel/tambah_variable');
         $this->load->view('template/footer');
     }
-    public function tambah_user()
+
+    public function addvariable()
     {
-        $this->full_user->tambahuser();
+        $this->model_variable->add_variable();
     }
 }

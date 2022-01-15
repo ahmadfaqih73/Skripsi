@@ -1,0 +1,27 @@
+<?php
+if (isset($_POST['hitung'])) {
+    $ipk = $_POST['ipk'];
+    // $itaq = $_POST['itaq'];
+    // $taat = $_POST['taat'];
+    // $visi = $_POST['visi'];
+
+    // //step 1
+    if ($ipk >= 0 and $ipk <= 2.5) {
+        $jenisIpk = (2.5 - $ipk) / (2.5 - 2) . 'Tidak baik';
+    } elseif ($ipk >= 2 and $ipk <= 2.5) {
+        $jenisIpk = ($ipk - 2) / (2.5 - 2) . 'baik';
+    } elseif ($ipk >= 2.5 and $ipk <= 3) {
+        $jenisIpk = (2.5 - $ipk) / (3 - 2.5) . 'baik';
+    } elseif ($ipk >= 2.75 and $ipk <= 3) {
+        $jenisIpk = ($ipk - 2.75) / (3 - 2.75) . 'Sangat baik';
+    } elseif ($ipk >= 3) {
+        $jenisIpk = 1;
+    }
+}
+?>
+<?php
+if (isset($_POST['hitung'])) { ?>
+    <br>
+    <h5>STEP 1</h5>
+    <b>Biner :</b> <?php echo $jenisIpk; ?>
+<?php }

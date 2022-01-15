@@ -29,7 +29,7 @@
                 <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
                 <li class="nav-item menu-close">
-                    <a href="#" class="nav-link active">
+                    <a href="<?= base_url('View_user/index'); ?>" class="nav-link active">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>
                             User
@@ -46,15 +46,32 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="pages/tables/simple.html" class="nav-link">
+                            <a href="<?= base_url('Data_variable/index') ?>" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Data Variable</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/tables/data.html" class="nav-link">
+                            <a href="<?= base_url('Rules/index') ?>" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Himpunan Fuzzy</p>
+                            </a>
+                        </li>
+
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">
+                        <i class="nav-icon fas fa-table"></i>
+                        <p>
+                            Proses Fuzzy
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="<?= base_url('Fuzzyfikasi/index') ?>" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Fuzzyfikasi</p>
                             </a>
                         </li>
 
